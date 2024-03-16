@@ -1,0 +1,19 @@
+server:
+  port:  3000
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5332/customer
+    username: mohanned
+    password: password123
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernates:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  min:
+    web-application-type: servlet
